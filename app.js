@@ -6,6 +6,7 @@ const empty = document.getElementById("empty");
 
 //button EventListeners
 button.addEventListener("click", uploadJokes);
+count.addEventListener("keyup",enter);
 
 //Functions
 function uploadJokes(e) {
@@ -70,3 +71,10 @@ function showError(msg, color) {
   //Timer to remove ALERT
   setTimeout(() => count.previousSibling.remove(), 2000);
 }
+
+//click on ENTER
+function enter(e) {
+  if (e.keyCode === 13) {
+    e.target.nextElementSibling.click();
+  }
+} 
