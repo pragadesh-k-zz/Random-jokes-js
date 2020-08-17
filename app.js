@@ -17,7 +17,7 @@ function uploadJokes(e) {
   } else {
 
     //Fetching API
-    fetch(`http://api.icndb.com/jokes/random/${count.value}`)
+    fetch(`https://api.icndb.com/jokes/random/${count.value}`)
 
       //Promises for the fetch API
       .then(function (data) {
