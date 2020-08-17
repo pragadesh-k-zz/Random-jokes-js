@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!--Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!--Tab icon-->
+    <link rel="icon" href="empty.png" type="image/x-icon" />
+
+    <title>Random Jokes</title>
+  </head>
+  <body style="overflow-y: hidden;">
+    <!--Navbar-->
+    <div class="container p-0">
+      <nav class="navbar bg-primary text-cente">
+        <h3 class="mx-auto display-4 text-white">Random Jokes</h3>
+      </nav>
+
+      <!--Number of Jokes-->
+      <div class="card card-header">
+        <div class="col-6 mx-auto forms">
+          <input
+            type="number"
+            name="number"
+            id="count"
+            class="form-control mb-3"
+            placeholder="Type number of Jokes..."
+          />
+          <input
+            type="submit"
+            id="getjokes"
+            class="form-control bg-primary text-white"
+            value="Get jokes"
+          />
+        </div>
+
+        <!--Jokes-->
+        <div class="card-body">
+          <ul
+            class="list-group"
+            style="list-style: decimal; height: 300px; overflow-y: scroll;"
+          >
+            <!--Empty divison-->
+            <div id="empty" class="m-auto">
+              <img src="empty.png" alt="Empty Image" style="height: 70px;" />
+              <span class="text-muted btn-block">Get jokes</span>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
