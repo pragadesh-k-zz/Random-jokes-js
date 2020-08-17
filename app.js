@@ -66,10 +66,18 @@ function showError(msg, color) {
   div.className = "text-white text-center mb-3";
   div.style.backgroundColor = color;
   div.textContent = msg;
+  //REMOVE series of alert
+  if (count.previousElementSibling) {
+    count.previousElementSibling.remove();
+  }
   //INSERTING
   document.querySelector(".forms").insertBefore(div, count);
-  //Timer to remove ALERT
-  setTimeout(() => count.previousSibling.remove(), 2000);
+
+  setTimeout(() => {
+    if (count.previousElementSibling) {
+      count.previousElementSibling.remove()
+    }
+  }, 2000);
 }
 
 //click on ENTER
